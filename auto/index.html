@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMaster — Профессиональный автосервис</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-bg"></div>
+        <div class="container header-content">
+            <div class="header-badge animate-on-scroll visible">
+                <i class="fas fa-bolt"></i> Работаем с 2010 года
+            </div>
+            <h1 class="animate-on-scroll visible delay-1">Auto<span>Master</span></h1>
+            <p class="animate-on-scroll visible delay-2">Диагностика, ремонт и обслуживание автомобилей любой сложности. <br>Бесплатная эвакуация при ремонте от 30 000 ₽.</p>
+            <div class="header-buttons animate-on-scroll visible delay-3">
+                <a href="#appointment" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Записаться
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    <i class="fas fa-arrow-right"></i> Наши услуги
+                </a>
+            </div>
+            <div class="header-stats animate-on-scroll visible delay-4">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">лет опыта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">довольных клиентов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">средняя оценка</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><i class="fas fa-car"></i> AutoMaster</div>
+            <ul class="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#gallery">Фото</a></li>
+                <li><a href="#appointment">Запись</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-phone">
+                <i class="fas fa-phone-alt"></i> +7 (495) 999-88-77
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Наши <span>услуги</span></h2>
+            <p class="section-subtitle animate-on-scroll">Полный спектр услуг по ремонту и обслуживанию автомобилей любых марок</p>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll delay-1">
+                    <div class="service-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Диагностика</h3>
+                    <p>Компьютерная диагностика всех систем. Выявление неисправностей за 30 минут.</p>
+                    <span class="service-price">от 1 500 ₽</span>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                    <h3>Замена масла</h3>
+                    <p>Замена масла и фильтров. Используем только оригинальные расходники.</p>
+                    <span class="service-price">от 3 000 ₽</span>
+                </div>
+                <div class="service-card animate-on-scroll delay-3">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Ремонт двигателя</h3>
+                    <p>Капитальный и текущий ремонт бензиновых и дизельных двигателей.</p>
+                    <span class="service-price">от 15 000 ₽</span>
+                </div>
+                <div class="service-card animate-on-scroll delay-4">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Кузовной ремонт</h3>
+                    <p>Покраска, рихтовка, удаление вмятин без покраски (PDR).</p>
+                    <span class="service-price">от 8 000 ₽</span>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="service-icon"><i class="fas fa-car-side"></i></div>
+                    <h3>Ходовая часть</h3>
+                    <p>Замена амортизаторов, пружин, шаровых опор и сайлентблоков.</p>
+                    <span class="service-price">от 5 000 ₽</span>
+                </div>
+                <div class="service-card animate-on-scroll delay-3">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Электрика</h3>
+                    <p>Ремонт генератора, стартера, электропроводки и замена аккумулятора.</p>
+                    <span class="service-price">от 2 500 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <img src="img/about.jpg" alt="Ремонт двигателя">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h2>Почему <span>AutoMaster</span>?</h2>
+                    <p>Мы ценим ваше время и доверие. Используем только качественное оборудование и расходные материалы от проверенных производителей. Даём гарантию на все виды работ.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-medal"></i>
+                            <span>Гарантия до 2 лет</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <span>Бесплатная диагностика</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Работаем с 2010 года</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Онлайн-статус ремонта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Фото <span>работ</span></h2>
+            <p class="section-subtitle animate-on-scroll">Посмотрите, как мы работаем и что можем сделать для вашего автомобиля</p>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll delay-1">
+                    <img src="img/gallery-1.jpg" alt="Ремонт двигателя">
+                    <div class="gallery-overlay">
+                        <span>Ремонт двигателя</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-2">
+                    <img src="img/gallery-2.jpg" alt="Кузовной ремонт">
+                    <div class="gallery-overlay">
+                        <span>Кузовной ремонт</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-3">
+                    <img src="img/gallery-3.jpg" alt="Диагностика">
+                    <div class="gallery-overlay">
+                        <span>Диагностика</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-4">
+                    <img src="img/gallery-4.jpg" alt="Замена масла">
+                    <div class="gallery-overlay">
+                        <span>Замена масла</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-1">
+                    <img src="img/gallery-5.jpg" alt="Ремонт ходовой">
+                    <div class="gallery-overlay">
+                        <span>Ремонт ходовой</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-2">
+                    <img src="img/gallery-6.jpg" alt="Электрика">
+                    <div class="gallery-overlay">
+                        <span>Электрика</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section" id="appointment">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Записаться на <span>ремонт</span></h2>
+            <p class="section-subtitle animate-on-scroll">Оставьте заявку, и мы перезвоним вам в течение 15 минут</p>
+            <div class="form-section animate-on-scroll">
+                <div class="form-grid">
+                    <div class="form-info">
+                        <h3>Бесплатная диагностика</h3>
+                        <p>При записи на любой ремонт вы получаете диагностику ходовой части в подарок!</p>
+                        <ul>
+                            <li><i class="fas fa-clock"></i> Работаем ежедневно: 9:00 — 21:00</li>
+                            <li><i class="fas fa-map-pin"></i> Москва, ул. Автомагистральная, д. 15</li>
+                            <li><i class="fas fa-phone-alt"></i> +7 (495) 999-88-77</li>
+                        </ul>
+                        <div class="form-bonus">
+                            <i class="fas fa-gift"></i>
+                            <span>При первом визите — скидка 10%</span>
+                        </div>
+                    </div>
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Ваше имя *" required>
+                            <input type="text" placeholder="Телефон *" required id="phoneInput">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Марка автомобиля">
+                            <input type="text" placeholder="Год выпуска">
+                        </div>
+                        <select required>
+                            <option value="">Выберите услугу</option>
+                            <option>Диагностика</option>
+                            <option>Замена масла</option>
+                            <option>Ремонт двигателя</option>
+                            <option>Кузовной ремонт</option>
+                            <option>Ремонт ходовой</option>
+                            <option>Электрика</option>
+                            <option>Другое</option>
+                        </select>
+                        <textarea placeholder="Опишите проблему, удобное время..."></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </button>
+                        <p style="font-size: 0.8rem; color: #5a6678; text-align: center; margin-top: 10px;">
+                            <i class="fas fa-lock"></i> Ваши данные защищены и не передаются третьим лицам
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts & Map -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Как <span>нас найти</span></h2>
+            <p class="section-subtitle animate-on-scroll">Удобный выезд с МКАД, большая парковка для клиентов</p>
+            <div class="contacts-grid animate-on-scroll">
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>Москва, ул. Автомагистральная, д. 15</p>
+                            <p style="font-size: 0.9rem; color: #5a6678;">Въезд с МКАД, 2 км от развязки</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Часы работы</h4>
+                            <p>Ежедневно: 9:00 — 21:00</p>
+                            <p style="font-size: 0.9rem; color: #5a6678;">Запись до 20:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 999-88-77</p>
+                            <p style="font-size: 0.9rem; color: #5a6678;">Круглосуточная поддержка</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@automaster.ru</p>
+                            <p style="font-size: 0.9rem; color: #5a6678;">Отвечаем в течение часа</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#" style="background: #c73e1d; color: white; padding: 12px 24px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: 0.2s; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.9rem;">
+                            <i class="fas fa-route"></i> Построить маршрут
+                        </a>
+                        <a href="#" style="background: #25D366; color: white; padding: 12px 24px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: 0.2s; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts-map">
+                    <div id="map" style="width: 100%; height: 100%; min-height: 450px; border-radius: 4px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span>© 2026 AutoMaster. Все права защищены.</span>
+            <div class="footer-socials">
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш-api-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
