@@ -1,0 +1,194 @@
+<!-- Login: admin -->
+<!-- Pass: admin123 -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка — SushiWok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Sushi<span class="highlight">Wok</span></span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#promo">Акции</a></li>
+                <li><a href="admin.html" class="active">Админка</a></li>
+            </ul>
+            <div class="nav-cart" id="cartToggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Login -->
+    <section class="section admin-login-section" id="adminLogin">
+        <div class="container">
+            <div class="admin-login-box animate-on-scroll visible">
+                <div class="admin-login-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h2>Вход в <span class="highlight">админку</span></h2>
+                <p>Введите логин и пароль для доступа</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Логин</label>
+                        <input type="text" id="loginUsername" placeholder="Введите логин" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-key"></i> Пароль</label>
+                        <input type="password" id="loginPassword" placeholder="Введите пароль" required>
+                    </div>
+                    <div id="loginError" class="login-error" style="display:none;">
+                        <i class="fas fa-exclamation-circle"></i> Неверный логин или пароль!
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Войти
+                    </button>
+                </form>
+                <div class="admin-login-hint">
+                    <span>Подсказка: admin / admin123</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel (скрыт по умолчанию) -->
+    <section class="section admin-section" id="adminPanel" style="display:none;">
+        <div class="container">
+            <div class="admin-header">
+                <h2 class="section-title animate-on-scroll">Панель <span class="highlight">управления</span></h2>
+                <button class="btn btn-outline" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Выйти
+                </button>
+            </div>
+            <p class="section-subtitle animate-on-scroll">Добавляйте и редактируйте товары</p>
+
+            <!-- Admin Form -->
+            <div class="admin-form animate-on-scroll">
+                <h3><i class="fas fa-plus-circle"></i> Добавить товар</h3>
+                <form id="adminForm">
+                    <div class="form-row">
+                        <input type="text" id="productName" placeholder="Название товара" required>
+                        <select id="productCategory" required>
+                            <option value="">Выберите категорию</option>
+                            <option value="rolls">Роллы</option>
+                            <option value="sushi">Суши</option>
+                            <option value="sets">Сеты</option>
+                            <option value="drinks">Напитки</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="number" id="productPrice" placeholder="Цена (₽)" required>
+                        <input type="text" id="productImage" placeholder="Ссылка на фото (img/... или URL)">
+                    </div>
+                    <textarea id="productDescription" placeholder="Описание товара" rows="3"></textarea>
+                    <input type="hidden" id="editId">
+                    <div class="admin-actions">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-save"></i> Добавить товар
+                        </button>
+                        <button type="button" class="btn btn-outline" id="cancelEdit" style="display:none;">
+                            <i class="fas fa-times"></i> Отменить
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Admin Products List -->
+            <div class="admin-products animate-on-scroll">
+                <h3><i class="fas fa-list"></i> Товары <span id="productCount">(0)</span></h3>
+                <div id="adminProductList">
+                    <!-- Загружается из JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Sushi<span class="highlight">Wok</span></span>
+                    </div>
+                    <p>Свежие суши и роллы с доставкой по Москве</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Меню</h4>
+                    <a href="catalog.html">Роллы</a>
+                    <a href="catalog.html">Суши</a>
+                    <a href="catalog.html">Сеты</a>
+                    <a href="catalog.html">Напитки</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <a href="index.html#about">О нас</a>
+                    <a href="index.html#promo">Акции</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (495) 999-88-77</p>
+                    <p><i class="fas fa-clock"></i> 10:00 — 23:00</p>
+                    <p><i class="fas fa-map-pin"></i> Москва, ул. Центральная, 5</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 SushiWok. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Корзина</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Корзина пуста</p>
+                <span>Добавьте товары из каталога</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
