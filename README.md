@@ -76,7 +76,7 @@ Web Works is my portfolio featuring three fully functional websites for differen
 | 💾 Хранение в localStorage | 💾 localStorage storage |
 | 🌙 Тёмная тема со стеклом | 🌙 Dark theme with glass effect |
 
-**[📂 Перейти в папку →](sushiwok/)**
+**[📂 Перейти в папку →](sushi/)**
 
 ---
 
