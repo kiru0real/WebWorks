@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
-**3 сайта. 3 разных стиля. Полный фарш.** • **3 sites. 3 different styles. Full package.**
+**4 проекта. 4 разных стиля. Полный фарш.** • **4 projects. 4 different styles. Full package.**
 
 </div>
 
@@ -17,10 +17,10 @@
 ## 📖 О проекте • About
 
 **Русский:**  
-Web Works — это моё портфолио, в котором собраны три полностью рабочих сайта для разных сфер. Каждый проект демонстрирует уникальный подход к дизайну, анимациям и функциональности. От светлой стоматологии до тёмного автосервиса и полноценного суши-ресторана с админкой.
+Web Works — это моё портфолио, в котором собраны четыре полностью рабочих проекта для разных сфер. Каждый проект демонстрирует уникальный подход к дизайну, анимациям и функциональности. От светлой стоматологии до тёмного автосервиса, полноценного суши-ресторана с админкой и игрового казино со слотами.
 
 **English:**  
-Web Works is my portfolio featuring three fully functional websites for different industries. Each project demonstrates a unique approach to design, animations, and functionality. From a light dental clinic to a dark auto service and a full-featured sushi restaurant with an admin panel.
+Web Works is my portfolio featuring four fully functional projects for different industries. Each project demonstrates a unique approach to design, animations, and functionality. From a light dental clinic to a dark auto service, a full-featured sushi restaurant with an admin panel, and a casino slot game.
 
 ---
 
@@ -28,9 +28,9 @@ Web Works is my portfolio featuring three fully functional websites for differen
 
 <div align="center">
 
-| 🦷 Стоматология • Dental | 🚗 Автосервис • Auto Service | 🍣 Суши-ресторан • Sushi |
-|--------------------------|------------------------------|--------------------------|
-| ![](screenshots/dental-preview.png) | ![](screenshots/auto-preview.png) | ![](screenshots/sushi-preview.png) |
+| 🦷 Стоматология • Dental | 🚗 Автосервис • Auto Service | 🍣 Суши-ресторан • Sushi | 🎰 Слоты • Slots |
+|--------------------------|------------------------------|--------------------------|-------------------|
+| ![](screenshots/dental-preview.png) | ![](screenshots/auto-preview.png) | ![](screenshots/sushi-preview.png) | ![](screenshots/slots-preview.png) |
 
 </div>
 
@@ -76,7 +76,23 @@ Web Works is my portfolio featuring three fully functional websites for differen
 | 💾 Хранение в localStorage | 💾 localStorage storage |
 | 🌙 Тёмная тема со стеклом | 🌙 Dark theme with glass effect |
 
-**[📂 Перейти в папку →](sushi/)**
+**[📂 Перейти в папку →](sushiwok/)**
+
+---
+
+### 🎰 Casino Slots — Игровой слот
+
+| 🇷🇺 Русский | 🇬🇧 English |
+|-------------|------------|
+| 🎡 3 барабана с 7 символами | 🎡 3 reels with 7 symbols |
+| 💰 Баланс с сохранением | 💰 Balance with save |
+| 🎲 Настройка ставки | 🎲 Bet adjustment |
+| 🏆 Выигрыши с множителями | 🏆 Wins with multipliers |
+| 💵 Пополнение баланса | 💵 Balance top-up |
+| 📜 История последних спинов | 📜 Spin history |
+| ⌨️ Управление с клавиатуры | ⌨️ Keyboard controls |
+
+**[📂 Перейти в папку →](slots/)**
 
 ---
 
@@ -127,18 +143,20 @@ Web Works is my portfolio featuring three fully functional websites for differen
 ### 🇷🇺 Пошаговая инструкция
 
 1. **Скачай** репозиторий или клонируй через Git
-2. **Выбери** папку с нужным проектом (`dental/`, `auto/` или `sushiwok/`)
+2. **Выбери** папку с нужным проектом (`dental/`, `auto/`, `sushiwok/` или `casino/`)
 3. **Открой** `index.html` в браузере (Chrome, Edge, Firefox)
 4. **Для SushiWok:** зайди в админку (`admin.html`) и войди под `admin / admin123`
-5. **Наслаждайся!** 🎉
+5. **Для Casino Slots:** используй клавишу `Enter` для вращения или нажми на кнопку
+6. **Наслаждайся!** 🎉
 
 ### 🇬🇧 Step-by-step guide
 
 1. **Download** the repository or clone it via Git
-2. **Choose** the project folder (`dental/`, `auto/`, or `sushiwok/`)
+2. **Choose** the project folder (`dental/`, `auto/`, `sushiwok/`, or `casino/`)
 3. **Open** `index.html` in your browser (Chrome, Edge, Firefox)
 4. **For SushiWok:** go to the admin panel (`admin.html`) and log in with `admin / admin123`
-5. **Enjoy!** 🎉
+5. **For Casino Slots:** press `Enter` to spin or click the button
+6. **Enjoy!** 🎉
 
 ---
 
@@ -146,7 +164,7 @@ Web Works is my portfolio featuring three fully functional websites for differen
 
 ```bash
 # Клонируй проект • Clone the project
-git clone https://github.com/yourusername/web-works.git
+git clone https://github.com/kiru0real/web-works.git
 
 # Перейди в папку • Go to folder
 cd web-works
@@ -157,6 +175,8 @@ cd dental/ && open index.html
 cd auto/ && open index.html
 # или • or
 cd sushiwok/ && open index.html
+# или • or
+cd casino/ && open index.html
 ```
 
 ---
@@ -200,11 +220,27 @@ web-works/
 │   ├── style.css
 │   ├── script.js
 │   └── img/                 # Фото для сайта • Images
+├── casino/                  # 🎰 Казино • Casino
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 └── screenshots/             # Скриншоты для README
     ├── dental-preview.png
     ├── auto-preview.png
-    └── sushi-preview.png
+    ├── sushi-preview.png
+    └── casino-preview.png
 ```
+
+---
+
+## 🎮 Casino Slots — Управление • Controls
+
+| Клавиша • Key | Действие • Action |
+|---------------|-------------------|
+| `Enter` | Крутить слоты • Spin |
+| `↑` | Увеличить ставку • Increase bet |
+| `↓` | Уменьшить ставку • Decrease bet |
+| `Esc` | Закрыть попап • Close popup |
 
 ---
 
