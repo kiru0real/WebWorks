@@ -32,7 +32,6 @@ Web Works is my portfolio featuring four fully functional projects for different
 |--------------------------|------------------------------|--------------------------|
 | ![](screenshots/dental-preview.png) | ![](screenshots/auto-preview.png) | ![](screenshots/sushi-preview.png) |
 | 🎰 Слоты • Slots |
-|-------------------|
 | ![](screenshots/slots-preview.png) |
 
 </div>
