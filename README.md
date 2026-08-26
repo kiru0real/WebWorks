@@ -28,9 +28,12 @@ Web Works is my portfolio featuring four fully functional projects for different
 
 <div align="center">
 
-| 🦷 Стоматология • Dental | 🚗 Автосервис • Auto Service | 🍣 Суши-ресторан • Sushi | 🎰 Слоты • Slots |
-|--------------------------|------------------------------|--------------------------|-------------------|
-| ![](screenshots/dental-preview.png) | ![](screenshots/auto-preview.png) | ![](screenshots/sushi-preview.png) | ![](screenshots/slots-preview.png) |
+| 🦷 Стоматология • Dental | 🚗 Автосервис • Auto Service | 🍣 Суши-ресторан • Sushi |
+|--------------------------|------------------------------|--------------------------|
+| ![](screenshots/dental-preview.png) | ![](screenshots/auto-preview.png) | ![](screenshots/sushi-preview.png) |
+| 🎰 Слоты • Slots |
+|-------------------|
+| ![](screenshots/slots-preview.png) |
 
 </div>
 
