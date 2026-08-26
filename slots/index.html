@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASINO SLOTS — Крути слоты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+                <span>CASINO <span class="highlight">SLOTS</span></span>
+            </div>
+            <div class="header-balance">
+                <span class="balance-label"><i class="fas fa-coins"></i> БАЛАНС</span>
+                <span class="balance-amount" id="balanceDisplay">1000</span>
+                <span class="balance-currency">₽</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game -->
+    <main>
+        <div class="container">
+            <!-- Slot Machine -->
+            <div class="slot-machine">
+                <div class="slot-window">
+                    <div class="slot-reels" id="slotReels">
+                        <div class="reel" id="reel1">
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                        </div>
+                        <div class="reel" id="reel2">
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                        </div>
+                        <div class="reel" id="reel3">
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🍋</div>
+                            <div class="symbol">🍊</div>
+                            <div class="symbol">🍇</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">7️⃣</div>
+                        </div>
+                    </div>
+                    <div class="slot-overlay-top"></div>
+                    <div class="slot-overlay-bottom"></div>
+                    <div class="slot-result" id="slotResult"></div>
+                </div>
+
+                <!-- Controls -->
+                <div class="slot-controls">
+                    <div class="bet-control">
+                        <label>СТАВКА</label>
+                        <div class="bet-buttons">
+                            <button class="bet-btn" id="betDown"><i class="fas fa-minus"></i></button>
+                            <span class="bet-amount" id="betDisplay">10</span>
+                            <button class="bet-btn" id="betUp"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="spin-btn" id="spinBtn">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>КРУТИТЬ</span>
+                    </button>
+                    <button class="max-btn" id="maxBetBtn">
+                        <i class="fas fa-bolt"></i>
+                        <span>MAX</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Panel -->
+            <div class="bottom-panel">
+                <div class="balance-controls">
+                    <button class="add-money-btn" id="addMoney10">+100 ₽</button>
+                    <button class="add-money-btn" id="addMoney50">+500 ₽</button>
+                    <button class="add-money-btn" id="addMoney100">+1000 ₽</button>
+                    <button class="reset-btn" id="resetBalance">⟳ Сброс</button>
+                </div>
+
+                <div class="history">
+                    <h4><i class="fas fa-history"></i> ИСТОРИЯ</h4>
+                    <div class="history-list" id="historyList">
+                        <div class="history-empty">Начните игру!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span>© 2026 CASINO SLOTS. Играйте ответственно!</span>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Result Popup -->
+    <div class="result-popup" id="resultPopup">
+        <div class="result-popup-content">
+            <i class="fas fa-trophy" id="resultIcon"></i>
+            <h2 id="resultTitle">ВЫ ВЫИГРАЛИ!</h2>
+            <p id="resultAmount">+100 ₽</p>
+            <button class="btn btn-primary" id="resultClose">КРУТИТЬ ЕЩЁ</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
