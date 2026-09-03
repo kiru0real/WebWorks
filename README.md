@@ -145,7 +145,7 @@ Web Works is my portfolio featuring four fully functional projects for different
 ### 🇷🇺 Пошаговая инструкция
 
 1. **Скачай** репозиторий или клонируй через Git
-2. **Выбери** папку с нужным проектом (`dental/`, `auto/`, `sushiwok/` или `casino/`)
+2. **Выбери** папку с нужным проектом (`dental/`, `auto/`, `sushiwok/` или `slots/`)
 3. **Открой** `index.html` в браузере (Chrome, Edge, Firefox)
 4. **Для SushiWok:** зайди в админку (`admin.html`) и войди под `admin / admin123`
 5. **Для Casino Slots:** используй клавишу `Enter` для вращения или нажми на кнопку
@@ -154,7 +154,7 @@ Web Works is my portfolio featuring four fully functional projects for different
 ### 🇬🇧 Step-by-step guide
 
 1. **Download** the repository or clone it via Git
-2. **Choose** the project folder (`dental/`, `auto/`, `sushiwok/`, or `casino/`)
+2. **Choose** the project folder (`dental/`, `auto/`, `sushiwok/`, or `slots/`)
 3. **Open** `index.html` in your browser (Chrome, Edge, Firefox)
 4. **For SushiWok:** go to the admin panel (`admin.html`) and log in with `admin / admin123`
 5. **For Casino Slots:** press `Enter` to spin or click the button
@@ -178,7 +178,7 @@ cd auto/ && open index.html
 # или • or
 cd sushiwok/ && open index.html
 # или • or
-cd casino/ && open index.html
+cd slots/ && open index.html
 ```
 
 ---
@@ -222,7 +222,7 @@ web-works/
 │   ├── style.css
 │   ├── script.js
 │   └── img/                 # Фото для сайта • Images
-├── casino/                  # 🎰 Казино • Casino
+├── slots/                  # 🎰 Казино Slots • Casino Slots
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
