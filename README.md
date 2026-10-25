@@ -41,7 +41,7 @@ Each project has its own visual style and feature set. The repository includes a
 
 | 🎰 Casino Slots | 🚗 Velocity |
 |---|---|
-| ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity.png) |
+| ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity-preview.png) |
 
 </div>
 
