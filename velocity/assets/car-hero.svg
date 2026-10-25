@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22262c"/><stop offset=".52" stop-color="#101216"/><stop offset="1" stop-color="#08090b"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#c8ccd1" stop-opacity=".24"/><stop offset="1" stop-color="#c8ccd1" stop-opacity="0"/></radialGradient>
+ <linearGradient id="paint" x1="0" y1="0" x2=".1" y2="1"><stop stop-color="#c8ccd1"/><stop offset=".5" stop-color="#c8ccd1"/><stop offset="1" stop-color="#34383e"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#687580"/><stop offset="1" stop-color="#1c2026"/></linearGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#bg)"/><ellipse cx="600" cy="360" rx="520" ry="310" fill="url(#glow)"/>
+<path d="M0 520 L1200 450 L1200 700 L0 700Z" fill="#08090b"/><path d="M0 584 L1200 520" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+<g transform="translate(60 55)">
+ <ellipse cx="550" cy="470" rx="470" ry="40" fill="#000" opacity=".65"/>
+ <path d="M105 398 Q135 356 215 342 L310 260 Q355 220 443 208 L635 210 Q704 215 773 285 L888 321 Q947 339 974 388 L967 424 Q944 447 895 448 L157 448 Q112 444 98 423Z" fill="url(#paint)" stroke="#e7e9eb" stroke-opacity=".34" stroke-width="3"/>
+ <path d="M321 267 Q358 232 438 226 L622 228 Q685 235 744 294 L342 294Z" fill="url(#glass)" stroke="#aeb9c2" stroke-opacity=".6" stroke-width="3"/>
+ <path d="M530 229 L530 294 M637 233 L699 294" stroke="#0a0c0f" stroke-width="8"/>
+ <path d="M175 355 L275 350 L306 326 L282 318 L205 332Z" fill="#f0f3f4" opacity=".9"/>
+ <path d="M800 325 L882 347 L918 373 L846 365Z" fill="#fff" opacity=".8"/>
+ <path d="M145 405 Q365 424 555 412 T930 402" fill="none" stroke="#fff" stroke-opacity=".24" stroke-width="4"/>
+ <path d="M375 310 L753 310" stroke="#fff" stroke-opacity=".15" stroke-width="2"/>
+ <circle cx="265" cy="425" r="67" fill="#090a0c" stroke="#737981" stroke-width="7"/><circle cx="265" cy="425" r="43" fill="#252a30" stroke="#c4c8cc" stroke-width="4"/><circle cx="265" cy="425" r="13" fill="#8c9299"/>
+ <circle cx="805" cy="425" r="67" fill="#090a0c" stroke="#737981" stroke-width="7"/><circle cx="805" cy="425" r="43" fill="#252a30" stroke="#c4c8cc" stroke-width="4"/><circle cx="805" cy="425" r="13" fill="#8c9299"/>
+</g>
+<text x="64" y="84" font-family="Arial,sans-serif" font-size="19" letter-spacing="6" fill="#fff" opacity=".65">VELOCITY / AUTOMOTIVE</text>
+<text x="64" y="640" font-family="Arial,sans-serif" font-size="26" letter-spacing="5" fill="#fff" opacity=".8">VELOCITY</text>
+</svg>
