@@ -10,8 +10,8 @@
 ![CSS](https://img.shields.io/badge/CSS3-styling-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-interactive-yellow)
 
-**5 проектов. 5 направлений. 5 разных визуальных стилей.**  
-**5 projects. 5 industries. 5 distinct visual styles.**
+**6 проектов. 6 направлений. 6 разных визуальных стилей.**  
+**6 projects. 6 industries. 6 distinct visual styles.**
 
 </div>
 
@@ -21,15 +21,15 @@
 
 **Русский**
 
-**Web Works** — коллекция из пяти frontend-проектов, созданных для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан и игровое слот-приложение.
+**Web Works** — коллекция из шести frontend-проектов для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан, слот-игра и SaaS-концепт бизнес-аналитики.
 
-У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, а также слот-игра с балансом и историей вращений.
+У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, слот-игра с балансом и историей вращений и премиальный тёмный **PULSE** — концепт платформы бизнес-аналитики с интерактивным дашбордом и анимациями.
 
 **English**
 
-**Web Works** is a collection of five frontend projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, and a slot game.
+**Web Works** is a collection of six frontend projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, a slot game, and a business intelligence SaaS concept.
 
-Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, and a slot game with a balance and spin history.
+Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, a slot game with balance and spin history, and **PULSE**, a premium dark business intelligence SaaS concept with an interactive dashboard and motion effects.
 
 ---
 
@@ -39,11 +39,9 @@ Each project has its own visual style and feature set. The repository includes a
 |---|---|---|
 | ![CleanSmile preview](screenshots/dental-preview.png) | ![AutoMaster preview](screenshots/auto-preview.png) | ![SushiWok preview](screenshots/sushi-preview.png) |
 
-| 🎰 Casino Slots | 🚗 Velocity |
-|---|---|
-| ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity-preview.png) |
-
-</div>
+| 🎰 Casino Slots | 🚗 VELOCITY | 📊 PULSE |
+|---|---|---|
+| ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity-preview.png) | ![PULSE preview](screenshots/pulse-preview.png) |
 
 ---
 
@@ -145,6 +143,31 @@ Each project has its own visual style and feature set. The repository includes a
 
 **Папка проекта • Project folder:** [`slots/`](slots/)
 
+### 📊 6. PULSE — Business Intelligence SaaS Concept
+
+Премиальный тёмный лендинг концептуальной платформы бизнес-аналитики. PULSE показывает, как может выглядеть продукт, который собирает ключевые метрики в одном интерфейсе и помогает командам быстрее переходить от данных к решениям.
+
+*A premium dark landing page for a conceptual business intelligence platform. PULSE demonstrates a product experience that brings key metrics together and helps teams move from data to decisions.*
+
+| 🇷🇺 Русский | 🇬🇧 English |
+|---|---|
+| 🖤 Премиальный тёмный интерфейс с фиолетовыми и мятными акцентами | 🖤 Premium dark interface with violet and mint accents |
+| 📈 Интерактивный макет дашборда и переключение периода графика | 📈 Interactive dashboard mockup and chart period switching |
+| 🧭 Вкладки решений с обновлением KPI и визуализаций | 🧭 Solution tabs that update KPIs and visualizations |
+| 💳 Переключатель ежемесячной и годовой оплаты | 💳 Monthly and yearly billing toggle |
+| 💬 Карусель отзывов и FAQ-аккордеон | 💬 Testimonial carousel and FAQ accordion |
+| 📱 Адаптивная мобильная навигация | 📱 Responsive mobile navigation |
+| ✨ Анимации появления при прокрутке и последовательное появление элементов hero-блока | ✨ Scroll-reveal animations and staggered hero entrance |
+| ♿ Уважение `prefers-reduced-motion` | ♿ Respects `prefers-reduced-motion` |
+| 📝 Форма с валидацией и локальным демо-подтверждением | 📝 Validated form with local demo confirmation |
+| ⚡ Чистые HTML, CSS и JavaScript без сборщика и сторонних JS/CSS-библиотек | ⚡ Vanilla HTML, CSS, and JavaScript; no build step or third-party JS/CSS libraries |
+
+> **Важно • Important:** PULSE — портфолио-концепт. Метрики, тарифы и отзывы демонстрационные; форма не отправляет данные на сервер. Для настоящего сервиса потребуются backend, авторизация, хранение данных и биллинг.
+>
+> PULSE is a portfolio concept. Metrics, pricing, and testimonials are illustrative; the form does not submit data to a server. A real service would require a backend, authentication, data storage, and billing.
+
+**Папка проекта • Project folder:** [`pulse/`](pulse/)
+
 ---
 
 ## 🛠️ Технологии • Tech Stack
@@ -170,7 +193,7 @@ The projects use standard HTML, CSS, and JavaScript. No shared build step or fro
 ### 🇷🇺 Русский
 
 1. Скачай или клонируй репозиторий.
-2. Выбери папку нужного проекта: `dental/`, `auto/`, `velocity/`, `sushiwok/` или `slots/`.
+2. Выбери папку нужного проекта: `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/` или `pulse/`.
 3. Открой `index.html` в современном браузере.
 4. Если проект использует внешний API или веб-шрифты, некоторым функциям может понадобиться подключение к интернету.
 5. Для удобной локальной разработки можно открыть папку проекта в VS Code и использовать **Live Server**.
@@ -178,7 +201,7 @@ The projects use standard HTML, CSS, and JavaScript. No shared build step or fro
 ### 🇬🇧 English
 
 1. Download or clone the repository.
-2. Choose a project folder: `dental/`, `auto/`, `velocity/`, `sushiwok/`, or `slots/`.
+2. Choose a project folder: `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/`, or `pulse/`.
 3. Open `index.html` in a modern browser.
 4. If a project uses an external API or web fonts, some features may require an internet connection.
 5. For convenient local development, open the project in VS Code and use **Live Server**.
@@ -195,21 +218,21 @@ git clone https://github.com/kiru0real/web-works.git
 cd web-works
 ```
 
-Затем открой папку проекта и запусти её `index.html`. Например, для VELOCITY:
+Затем открой папку проекта и запусти её `index.html`. Например, для PULSE:
 
-Then open the selected project folder and launch its `index.html`. For VELOCITY:
+Then open the selected project folder and launch its `index.html`. For PULSE:
 
 ```bash
-cd velocity
+cd pulse
 ```
 
 ---
 
 ## 🗺️ Настройка API-ключей • API Key Setup
 
-Если в AutoMaster или SushiWok используется **Yandex Maps API**, может понадобиться собственный API-ключ.
+Если в AutoMaster или SushiWok используется **Yandex Maps API**, может понадобиться собственный API-ключ. PULSE не использует внешние API-ключи.
 
-If AutoMaster or SushiWok uses the **Yandex Maps API**, you may need your own API key.
+If AutoMaster or SushiWok uses the **Yandex Maps API**, you may need your own API key. PULSE does not require external API keys.
 
 1. Перейди на [Yandex Maps Developer](https://developer.tech.yandex.ru/).
 2. Создай приложение и получи ключ согласно требованиям сервиса.
@@ -260,12 +283,20 @@ web-works/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
+├── pulse/                      # PULSE — Business Intelligence SaaS concept
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   ├── README.md
+│   └── assets/
+│       └── pulse-mark.svg
 └── screenshots/
     ├── dental-preview.png
     ├── auto-preview.png
     ├── velocity-preview.png
     ├── sushi-preview.png
-    └── slots-preview.png
+    ├── slots-preview.png
+    └── pulse-preview.png
 ```
 
 > Если фактические имена папок или файлов отличаются, обнови пути в этом README под реальную структуру репозитория. Папку сайта VELOCITY можно назвать `velocity/`, чтобы ссылка выше работала без изменений.
@@ -308,14 +339,14 @@ If the current project version uses demo login credentials, the local demo acces
 - Данные каталога и цены VELOCITY могут быть демонстрационными и не представляют актуальное предложение автосалона.
 - Демо-админки и данные в `localStorage` работают на стороне браузера и не заменяют защищённый backend.
 - Для реальной отправки заявок требуется backend или интеграция с сервисом форм.
-- Внешние API, карты и веб-шрифты могут требовать подключения к сети и действительных ключей.
+- Внешние API, карты и веб-шрифты в проектах, где они используются, могут требовать подключения к сети и действительных ключей. PULSE работает без внешних изображений, веб-шрифтов и сторонних JS/CSS-библиотек.
 - Перед production-развёртыванием необходимо добавить серверную авторизацию, проверку данных и безопасную обработку пользовательского ввода.
 
 - These projects are intended to showcase frontend skills.
 - VELOCITY inventory and prices may be demo data and do not represent a live dealership offer.
 - Demo admin panels and `localStorage` data run in the browser and are not a secure backend.
 - Real inquiry submission requires a backend or form-service integration.
-- External APIs, maps, and web fonts may require an internet connection and valid keys.
+- External APIs, maps, and web fonts may require an internet connection and valid keys in projects that use them. PULSE works without external images, web fonts, or third-party JS/CSS libraries.
 - Before production deployment, add server-side authentication, data validation, and secure handling of user input.
 
 ---
