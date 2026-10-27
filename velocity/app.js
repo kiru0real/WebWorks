@@ -40,7 +40,7 @@ function calculate(){
  $("#carCostLabel").textContent=money(cost);$("#downLabel").textContent=`${downPct}% · ${money(down)}`;$("#termLabel").textContent=`${months} месяцев`;$("#rateLabel").textContent=`${(annual*100).toFixed(1)}%`;
  let monthly;if(financePlan==="lease"){monthly=principal/months+cost*.012}else{const r=annual/12;monthly=r?principal*r/(1-Math.pow(1+r,-months)):principal/months}
  const total=monthly*months+down,overpay=Math.max(0,total-cost);
- $("#monthlyPayment").textContent=money(monthly);$("#resultDown").textContent=money(down);$("#resultPrincipal").textContent=money(principal);$("#resultOverpay").textContent=money(overpay);$("#resultTotal").textContent=money(total);
+ const paymentEl=$("#monthlyPayment");paymentEl.textContent=money(monthly);paymentEl.classList.remove("payment-updated");void paymentEl.offsetWidth;paymentEl.classList.add("payment-updated");$("#resultDown").textContent=money(down);$("#resultPrincipal").textContent=money(principal);$("#resultOverpay").textContent=money(overpay);$("#resultTotal").textContent=money(total);
 }
 function renderAdmin(){
  $("#adminList").innerHTML=cars.map(c=>`<div class="admin-car-row"><span><b>${c.brand} ${c.name}</b><br><small>${money(c.price)} · ${c.power} л.с.</small></span><button data-admin-delete="${c.id}">Удалить</button></div>`).join("");
@@ -85,9 +85,59 @@ $("#testdriveForm").addEventListener("submit",e=>{e.preventDefault();const d=Obj
 $("#menuToggle").addEventListener("click",()=>{const open=$("#nav").classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",String(open))});
 $("#nav a").forEach(a=>a.addEventListener("click",()=>$("#nav").classList.remove("open")));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!$("#modal").hidden)closeModal("modal");if(!$("#adminModal").hidden)closeModal("adminModal")}});
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.12});
-$$(".reveal").forEach(el=>revealObserver.observe(el));
-if(!("IntersectionObserver"in window))$$(".reveal").forEach(el=>el.classList.add("visible"));
-const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)$$(".site-header nav a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")===`#${entry.target.id}`))}),{rootMargin:"-35% 0px -55% 0px"});
-["home","catalog","experience","finance","about"].forEach(id=>{const el=$("#"+id);if(el)navObserver.observe(el)});
-galleryInit();resetFilters();calculate();
+const carGridForReveal = $("#carGrid");
+
+// Keep the active navigation item in sync with the section currently in view.
+if ("IntersectionObserver" in window) {
+  const navObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) $$(".site-header nav a").forEach(a =>
+      a.classList.toggle("active", a.getAttribute("href") === `#${entry.target.id}`)
+    );
+  }), { rootMargin: "-35% 0px -55% 0px" });
+  ["home", "catalog", "experience", "finance", "compare", "about", "gallery", "contact"].forEach(id => {
+    const el = $("#" + id);
+    if (el) navObserver.observe(el);
+  });
+}
+
+/* Reading progress bar */
+const progress = document.createElement("div");
+progress.className = "velocity-scroll-progress";
+progress.setAttribute("aria-hidden", "true");
+document.body.append(progress);
+let progressQueued = false;
+const updateProgress = () => {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.transform = `scaleX(${max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0})`;
+  progressQueued = false;
+};
+window.addEventListener("scroll", () => {
+  if (!progressQueued) { progressQueued = true; requestAnimationFrame(updateProgress); }
+}, { passive: true });
+window.addEventListener("resize", updateProgress, { passive: true });
+updateProgress();
+
+/* Subtle 3D tilt for desktop pointers only */
+if (carGridForReveal) {
+  const finePointer = window.matchMedia && window.matchMedia("(pointer:fine)").matches;
+  if (finePointer && !reduceMotion) {
+    carGridForReveal.addEventListener("pointermove", e => {
+      const card = e.target.closest(".car-card");
+      if (!card) return;
+      const r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      card.style.setProperty("--tilt-y", `${(x - .5) * 2.2}deg`);
+      card.style.setProperty("--tilt-x", `${(.5 - y) * 1.8}deg`);
+    });
+    carGridForReveal.addEventListener("pointerout", e => {
+      const card = e.target.closest(".car-card");
+      if (card && !card.contains(e.relatedTarget)) {
+        card.style.setProperty("--tilt-x", "0deg");
+        card.style.setProperty("--tilt-y", "0deg");
+      }
+    });
+  }
+}
+
+galleryInit();
+resetFilters();
+calculate();
