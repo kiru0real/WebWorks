@@ -299,12 +299,6 @@ web-works/
     └── pulse-preview.png
 ```
 
-> Если фактические имена папок или файлов отличаются, обнови пути в этом README под реальную структуру репозитория. Папку сайта VELOCITY можно назвать `velocity/`, чтобы ссылка выше работала без изменений.
-
-> If your actual folder or filenames differ, update the paths in this README to match your repository. Name the VELOCITY folder `velocity/` to keep the link above working as written.
-
----
-
 ## 🎮 Casino Slots — Управление • Controls
 
 | Клавиша • Key | Действие • Action |
