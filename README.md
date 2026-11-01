@@ -9,9 +9,12 @@
 ![HTML](https://img.shields.io/badge/HTML5-markup-orange)
 ![CSS](https://img.shields.io/badge/CSS3-styling-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-interactive-yellow)
+![Node.js](https://img.shields.io/badge/Node.js-22%2B-green)
+![Express](https://img.shields.io/badge/Express-backend-lightgrey)
+![SQLite](https://img.shields.io/badge/SQLite-database-blue)
 
-**6 проектов. 6 направлений. 6 разных визуальных стилей.**  
-**6 projects. 6 industries. 6 distinct visual styles.**
+**7 проектов. 7 направлений. 7 разных визуальных стилей.**  
+**7 projects. 7 industries. 7 distinct visual styles.**
 
 </div>
 
@@ -21,15 +24,15 @@
 
 **Русский**
 
-**Web Works** — коллекция из шести frontend-проектов для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан, слот-игра и SaaS-концепт бизнес-аналитики.
+**Web Works** — коллекция из семи веб-проектов для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан, слот-игра, SaaS-концепт бизнес-аналитики и сайт ресторана русской кухни с серверной частью.
 
-У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, слот-игра с балансом и историей вращений и премиальный тёмный **PULSE** — концепт платформы бизнес-аналитики с интерактивным дашбордом и анимациями.
+У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, слот-игра с балансом и историей вращений, премиальный тёмный **PULSE** — концепт платформы бизнес-аналитики с интерактивным дашбордом и анимациями — и **ГОРШОЧЕК**, современный сайт ресторана русской кухни с меню на SQLite и полноценной админ-панелью.
 
 **English**
 
-**Web Works** is a collection of six frontend projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, a slot game, and a business intelligence SaaS concept.
+**Web Works** is a collection of seven web projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, a slot game, a business intelligence SaaS concept, and a Russian cuisine restaurant website with a backend.
 
-Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, a slot game with balance and spin history, and **PULSE**, a premium dark business intelligence SaaS concept with an interactive dashboard and motion effects.
+Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, a slot game with balance and spin history, **PULSE**, a premium dark business intelligence SaaS concept with an interactive dashboard and motion effects, and **ГОРШОЧЕК**, a modern Russian cuisine restaurant website with a SQLite-backed menu and a full admin panel.
 
 ---
 
@@ -42,6 +45,11 @@ Each project has its own visual style and feature set. The repository includes a
 | 🎰 Casino Slots | 🚗 VELOCITY | 📊 PULSE |
 |---|---|---|
 | ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity-preview.png) | ![PULSE preview](screenshots/pulse-preview.png) |
+
+
+| 🍛 Gorshochek |
+|---|
+| ![Gorshochek preview](screenshots/gorshochek-preview.png) |
 
 ---
 
@@ -168,23 +176,51 @@ Each project has its own visual style and feature set. The repository includes a
 
 **Папка проекта • Project folder:** [`pulse/`](pulse/)
 
+### 🍲 7. ГОРШОЧЕК — Ресторан русской кухни • Russian Cuisine Restaurant
+
+Современный сайт ресторана русской кухни с тёплым визуальным стилем, меню, новостями и отдельной админ-панелью. В отличие от статических проектов репозитория, **ГОРШОЧЕК** использует backend на Node.js и хранит данные в SQLite.
+
+*A modern Russian cuisine restaurant website with a warm visual identity, menu, news, and a dedicated admin panel. Unlike the static projects in this repository, **ГОРШОЧЕК** uses a Node.js backend and stores its data in SQLite.*
+
+| 🇷🇺 Русский | 🇬🇧 English |
+|---|---|
+| 🍽️ Меню с категориями, ценами, весом и описаниями блюд | 🍽️ Menu with categories, prices, weights, and dish descriptions |
+| 🗄️ Хранение меню, новостей и настроек в SQLite | 🗄️ SQLite storage for menu items, news, and settings |
+| 🔐 Админ-панель с авторизацией | 🔐 Authenticated admin panel |
+| ✏️ Добавление, редактирование, удаление и скрытие блюд | ✏️ Add, edit, delete, and hide dishes |
+| 📰 Создание новостей и управление публикациями | 📰 Create news and manage publication status |
+| ⚙️ Настройки адреса, телефона и часов работы | ⚙️ Address, phone number, and opening-hours settings |
+| 🗺️ Интеграция с Яндекс Картами через JavaScript API 2.1 | 🗺️ Yandex Maps integration via JavaScript API 2.1 |
+| ⭐ Место под виджет отзывов Яндекса | ⭐ Configurable Yandex Reviews widget |
+| 🛡️ Серверные сессии, хеширование паролей и базовая защита запросов | 🛡️ Server-side sessions, password hashing, and request protection |
+| 📱 Адаптивная вёрстка | 📱 Responsive layout |
+
+> **Важно • Important:** изображения блюд и новостей задаются URL-адресами. Онлайн-заказы, бронирование столиков и оплата пока не реализованы. Яндекс Карты требуют собственного API-ключа; отзывы подключаются через URL виджета из настроек ресторана.
+>
+> Dish and news images are provided as URLs. Online ordering, table reservations, and payments are not implemented. Yandex Maps requires your own API key; reviews are embedded using the widget URL configured in restaurant settings.
+
+**Папка проекта • Project folder:** [`gorshochek/`](gorshochek/) · [README проекта](gorshochek/README.md)
+
 ---
 
 ## 🛠️ Технологии • Tech Stack
 
 | Технология • Technology | Использование • Purpose |
 |---|---|
-| **HTML5** | Семантическая структура страниц • Semantic page structure |
-| **CSS3** | Дизайн, адаптивность, темы и анимации • Styling, responsiveness, themes, and animations |
-| **JavaScript (ES6+)** | Интерактивность, фильтры, формы и UI-логика • Interactivity, filters, forms, and UI logic |
-| **`localStorage`** | Локальное сохранение данных там, где предусмотрено • Local persistence where implemented |
-| **Font Awesome** | Иконки в проектах, где библиотека подключена • Icons where included |
-| **Google Fonts** | Шрифты в проектах, где подключены • Typography where included |
-| **Yandex Maps API** | Карты в проектах с настроенной интеграцией • Maps in projects with API integration |
+| **HTML5 / CSS3 / JavaScript (ES6+)** | Структура, адаптивный дизайн, анимации и интерактивность • Structure, responsive styling, motion, and interactivity |
+| **Node.js 22+** | Серверная среда для ГОРШОЧКА • Server runtime for GORSHOCHEK |
+| **Express** | HTTP-сервер и REST API • HTTP server and REST API |
+| **SQLite + `better-sqlite3`** | Хранение меню, новостей, настроек и сессий • Storage for menu, news, settings, and sessions |
+| **`express-session` + `bcryptjs`** | Сессии администратора и хеширование паролей • Admin sessions and password hashing |
+| **Helmet + `express-rate-limit`** | Заголовки безопасности и ограничение частоты входа • Security headers and login rate limiting |
+| **`dotenv`** | Конфигурация сервера через `.env` • Server configuration through `.env` |
+| **`localStorage`** | Локальное сохранение данных в проектах, где предусмотрено • Local persistence where implemented |
+| **Font Awesome / Google Fonts** | Иконки и веб-шрифты в проектах, где подключены • Icons and web fonts where included |
+| **Yandex Maps API 2.1** | Интерактивные карты и виджет отзывов там, где настроены • Interactive maps and reviews widget where configured |
 
-Проекты используют обычные HTML, CSS и JavaScript. Для запуска не требуется единая сборка или установка frontend-фреймворка.
+Большинство проектов — статические сайты на HTML, CSS и JavaScript: их можно открыть напрямую или через Live Server. **ГОРШОЧЕК** — отдельное full-stack приложение: для него нужны Node.js, установка npm-зависимостей и запуск Express-сервера.
 
-The projects use standard HTML, CSS, and JavaScript. No shared build step or frontend framework installation is required.
+Most projects are static HTML, CSS, and JavaScript websites and can be opened directly or through Live Server. **ГОРШОЧЕК** is a separate full-stack application that requires Node.js, npm dependencies, and an Express server.
 
 ---
 
@@ -193,18 +229,18 @@ The projects use standard HTML, CSS, and JavaScript. No shared build step or fro
 ### 🇷🇺 Русский
 
 1. Скачай или клонируй репозиторий.
-2. Выбери папку нужного проекта: `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/` или `pulse/`.
-3. Открой `index.html` в современном браузере.
-4. Если проект использует внешний API или веб-шрифты, некоторым функциям может понадобиться подключение к интернету.
-5. Для удобной локальной разработки можно открыть папку проекта в VS Code и использовать **Live Server**.
+2. Для `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/` и `pulse/` открой `index.html` в современном браузере или используй **Live Server**.
+3. **ГОРШОЧЕК** запускается отдельно через Node.js: перейди в `gorshochek/`, установи зависимости командой `npm install`, создай `.env` на основе `.env.example` и выполни `npm run dev`.
+4. После запуска ГОРШОЧКА открой `http://localhost:3000`; админ-панель находится по адресу `http://localhost:3000/admin`.
+5. Внешние карты, виджеты и веб-шрифты могут требовать подключения к интернету и собственных ключей/настроек.
 
 ### 🇬🇧 English
 
 1. Download or clone the repository.
-2. Choose a project folder: `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/`, or `pulse/`.
-3. Open `index.html` in a modern browser.
-4. If a project uses an external API or web fonts, some features may require an internet connection.
-5. For convenient local development, open the project in VS Code and use **Live Server**.
+2. For `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/`, and `pulse/`, open `index.html` in a modern browser or use **Live Server**.
+3. **ГОРШОЧЕК** runs separately with Node.js: enter `gorshochek/`, install dependencies with `npm install`, create `.env` from `.env.example`, and run `npm run dev`.
+4. Once GORSHOCHEK is running, open `http://localhost:3000`; the admin panel is at `http://localhost:3000/admin`.
+5. External maps, widgets, and web fonts may require an internet connection and your own keys/settings.
 
 ---
 
@@ -218,31 +254,60 @@ git clone https://github.com/kiru0real/web-works.git
 cd web-works
 ```
 
-Затем открой папку проекта и запусти её `index.html`. Например, для PULSE:
+Для статических проектов выбери папку и открой её `index.html`. Например, для PULSE:
 
-Then open the selected project folder and launch its `index.html`. For PULSE:
+For a static project, choose its folder and open `index.html`. For example, for PULSE:
 
 ```bash
 cd pulse
 ```
 
+#### ГОРШОЧЕК • GORSHOCHEK (Node.js)
+
+Требуется **Node.js 22 или новее**. Команды ниже выполняются из корня репозитория:
+
+Node.js **22 or newer** is required. Run the following commands from the repository root:
+
+```powershell
+cd gorshochek
+npm install
+Copy-Item .env.example .env
+```
+
+Открой `.env` и задай длинный случайный `SESSION_SECRET`. При желании укажи `ADMIN_USERNAME`, `ADMIN_PASSWORD` и `YANDEX_MAPS_API_KEY`. Затем запусти сервер:
+
+Open `.env` and set a long random `SESSION_SECRET`. Optionally configure `ADMIN_USERNAME`, `ADMIN_PASSWORD`, and `YANDEX_MAPS_API_KEY`. Then start the server:
+
+```bash
+npm run dev
+```
+
+- Сайт • Website: `http://localhost:3000`
+- Админ-панель • Admin panel: `http://localhost:3000/admin`
+
+При первом запуске создаются база `data/gorshochek.sqlite`, стартовые блюда и новости. Если `ADMIN_PASSWORD` не задан или оставлен placeholder, сгенерированный пароль администратора выводится в консоль. Сохрани его. Настройки логина и пароля из `.env` применяются только при первом создании администратора.
+
+On first launch, the app creates `data/gorshochek.sqlite`, sample dishes, and news. If `ADMIN_PASSWORD` is missing or left as the placeholder, a generated admin password is printed in the console. Save it. Admin credentials from `.env` are used only when the admin account is first created.
+
 ---
 
 ## 🗺️ Настройка API-ключей • API Key Setup
 
-Если в AutoMaster или SushiWok используется **Yandex Maps API**, может понадобиться собственный API-ключ. PULSE не использует внешние API-ключи.
+AutoMaster и SushiWok могут использовать **Yandex Maps API**, если интеграция настроена. В **ГОРШОЧКЕ** ключ JavaScript API задаётся через `YANDEX_MAPS_API_KEY` в `gorshochek/.env`; адрес и координаты ресторана редактируются в админ-панели. PULSE не требует внешних API-ключей.
 
-If AutoMaster or SushiWok uses the **Yandex Maps API**, you may need your own API key. PULSE does not require external API keys.
+AutoMaster and SushiWok may use **Yandex Maps API** when the integration is configured. In **ГОРШОЧЕК**, the JavaScript API key is set through `YANDEX_MAPS_API_KEY` in `gorshochek/.env`; the restaurant address and coordinates are edited in the admin panel. PULSE does not require external API keys.
 
-1. Перейди на [Yandex Maps Developer](https://developer.tech.yandex.ru/).
-2. Создай приложение и получи ключ согласно требованиям сервиса.
-3. В HTML-файле карты замени placeholder на свой ключ.
-4. Не публикуй приватные ключи и не добавляй секреты в репозиторий.
+1. Перейди на [Yandex Maps Developer](https://developer.tech.yandex.ru/) и получи ключ для JavaScript API 2.1.
+2. Добавь ключ в `gorshochek/.env` как `YANDEX_MAPS_API_KEY=...`.
+3. В админ-панели ГОРШОЧКА укажи реальный адрес и координаты широты/долготы.
+4. Ограничь ключ по HTTP Referer в кабинете Яндекса. Не публикуй `.env` и серверные секреты в репозитории.
+5. Для отзывов открой карточку организации в Яндекс Картах → «Поделиться» → «Виджет с отзывами», скопируй URL `src` из iframe и вставь его в поле виджета в настройках ресторана.
 
-1. Visit [Yandex Maps Developer](https://developer.tech.yandex.ru/).
-2. Create an application and obtain a key according to the service requirements.
-3. Replace the placeholder in the relevant map HTML file.
-4. Do not publish private keys or commit secrets to the repository.
+1. Visit [Yandex Maps Developer](https://developer.tech.yandex.ru/) and obtain a JavaScript API 2.1 key.
+2. Add it to `gorshochek/.env` as `YANDEX_MAPS_API_KEY=...`.
+3. In the GORSHOCHEK admin panel, enter the real address and latitude/longitude coordinates.
+4. Restrict the key by HTTP Referer in the Yandex Developer Dashboard. Do not commit `.env` or server secrets.
+5. To display reviews, open the organization card in Yandex Maps → “Share” → “Reviews widget”, copy the iframe `src` URL, and paste it into the reviews-widget field in restaurant settings.
 
 Пример подключения • Example integration:
 
@@ -290,6 +355,22 @@ web-works/
 │   ├── README.md
 │   └── assets/
 │       └── pulse-mark.svg
+├── gorshochek/                 # ГОРШОЧЕК — Russian cuisine restaurant
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── README.md
+│   ├── src/
+│   │   ├── db/database.js
+│   │   └── public/
+│   │       ├── index.html
+│   │       ├── admin.html
+│   │       ├── styles.css
+│   │       ├── admin.css
+│   │       ├── app.js
+│   │       └── admin.js
+│   └── data/                   # создаётся автоматически, SQLite
 └── screenshots/
     ├── dental-preview.png
     ├── auto-preview.png
@@ -329,19 +410,21 @@ If the current project version uses demo login credentials, the local demo acces
 
 ## ⚠️ Важные замечания • Important Notes
 
-- Проекты предназначены для портфолио и демонстрации frontend-навыков.
+- Проекты предназначены для портфолио и демонстрации frontend- и full-stack-навыков.
 - Данные каталога и цены VELOCITY могут быть демонстрационными и не представляют актуальное предложение автосалона.
-- Демо-админки и данные в `localStorage` работают на стороне браузера и не заменяют защищённый backend.
-- Для реальной отправки заявок требуется backend или интеграция с сервисом форм.
+- Демо-админка SushiWok и данные в `localStorage` работают на стороне браузера и не заменяют защищённый backend. Админ-панель ГОРШОЧКА использует серверную авторизацию и SQLite.
+- ГОРШОЧЕК пока не принимает онлайн-заказы, оплату и бронирования столиков; фотографии блюд и новостей задаются URL-адресами.
+- Для реальной отправки заявок в проектах без backend требуется серверная часть или интеграция с сервисом форм.
 - Внешние API, карты и веб-шрифты в проектах, где они используются, могут требовать подключения к сети и действительных ключей. PULSE работает без внешних изображений, веб-шрифтов и сторонних JS/CSS-библиотек.
-- Перед production-развёртыванием необходимо добавить серверную авторизацию, проверку данных и безопасную обработку пользовательского ввода.
+- Для production-развёртывания ГОРШОЧКА настрой HTTPS, сильный `SESSION_SECRET`, ограничение ключа Яндекс Карт по домену и резервное копирование SQLite. Также проверь серверную валидацию и обработку пользовательского ввода.
 
-- These projects are intended to showcase frontend skills.
+- These projects are intended to showcase frontend and full-stack skills.
 - VELOCITY inventory and prices may be demo data and do not represent a live dealership offer.
-- Demo admin panels and `localStorage` data run in the browser and are not a secure backend.
-- Real inquiry submission requires a backend or form-service integration.
+- SushiWok's demo admin panel and `localStorage` data run in the browser and are not a secure backend. GORSHOCHEK's admin panel uses server-side authentication and SQLite.
+- GORSHOCHEK does not currently process online orders, payments, or table reservations; dish and news images are provided as URLs.
+- Projects without a backend need a server component or form-service integration to submit real inquiries.
 - External APIs, maps, and web fonts may require an internet connection and valid keys in projects that use them. PULSE works without external images, web fonts, or third-party JS/CSS libraries.
-- Before production deployment, add server-side authentication, data validation, and secure handling of user input.
+- Before deploying GORSHOCHEK to production, configure HTTPS, a strong `SESSION_SECRET`, domain restrictions for the Yandex Maps key, and SQLite backups. Review server-side validation and user-input handling as well.
 
 ---
 
