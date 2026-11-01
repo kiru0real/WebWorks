@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="theme-color" content="#172e25" />
+  <title>Админ-панель — ГОРШОЧЕК</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin.css" /><script defer src="/admin.js"></script>
+</head>
+<body class="admin-body">
+  <section class="login-view" id="login-view">
+    <div class="login-visual"><a href="/" class="login-brand"><span>✳</span> ГОРШОЧЕК</a><div class="login-message"><small>РАБОТАЕМ С ТЕПЛОМ</small><h1>Всё под<br /><em>контролем.</em></h1><p>Меню, новости и настроение ресторана — в одном месте.</p></div><div class="login-visual-bottom">РУССКАЯ КУХНЯ · С 2024</div></div>
+    <div class="login-panel"><form id="login-form" class="login-form"><p class="admin-eyebrow">ПРОСТРАНСТВО КОМАНДЫ</p><h2>С возвращением.</h2><p class="login-subtitle">Войдите, чтобы управлять рестораном.</p><label>Логин<input name="username" autocomplete="username" required placeholder="Ваш логин" /></label><label>Пароль<input name="password" type="password" autocomplete="current-password" required placeholder="Ваш пароль" /></label><button class="admin-button admin-button-primary" type="submit">Войти в админ-панель <span>↗</span></button><div class="form-error" id="login-error" role="alert"></div><a href="/" class="back-link">← Вернуться на сайт</a></form></div>
+  </section>
+
+  <section id="dashboard-view" class="dashboard-view" hidden>
+    <aside class="sidebar">
+      <a class="sidebar-brand" href="/"><span class="sidebar-brand-mark">✳</span><span>ГОРШОЧЕК<small>ПАНЕЛЬ УПРАВЛЕНИЯ</small></span></a>
+      <div class="sidebar-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+      <nav class="sidebar-nav"><button class="side-link is-active" data-view="overview"><span>◫</span> Обзор</button><button class="side-link" data-view="menu"><span>♨</span> Меню <i id="menu-count">0</i></button><button class="side-link" data-view="news"><span>✳</span> Новости <i id="news-count">0</i></button><button class="side-link" data-view="settings"><span>⚙</span> Настройки ресторана</button></nav>
+      <div class="sidebar-bottom"><div class="sidebar-user"><span class="user-avatar">Г</span><span><b id="admin-name">Администратор</b><small>Команда ресторана</small></span><span class="online-dot"></span></div><button id="logout-button" class="logout-button">↗ Выйти</button></div>
+    </aside>
+    <main class="admin-main">
+      <header class="admin-topbar"><div><span class="breadcrumb">ГОРШОЧЕК <i>/</i> <b id="page-breadcrumb">ОБЗОР</b></span><h1 id="page-title">Добрый день.</h1></div><a class="preview-link" href="/" target="_blank" rel="noopener">Открыть сайт <span>↗</span></a></header>
+      <div class="admin-content">
+        <section class="admin-view is-active" id="view-overview">
+          <div class="welcome-card"><div><small>ВАШ РЕСТОРАН — ВАШИ ПРАВИЛА</small><h2>Сегодня отличный<br /><em>день для вкусного.</em></h2><p>Обновляйте меню, рассказывайте новости и следите за тем, чтобы на сайте всегда было актуально.</p><button class="admin-button admin-button-light" data-go="menu">Перейти к меню <span>↗</span></button></div><div class="welcome-illustration"><div class="welcome-pot">♨</div><span>ВКУСНО<br />КАК ДОМА</span><i>✳</i></div></div>
+          <div class="stats-grid"><article class="stat-card"><span>ПОЗИЦИЙ В МЕНЮ</span><b id="stat-dishes">—</b><small>Блюда и напитки</small><i>♨</i></article><article class="stat-card"><span>ОПУБЛИКОВАНО НОВОСТЕЙ</span><b id="stat-news">—</b><small>Истории ресторана</small><i>✳</i></article><article class="stat-card"><span>РАЗДЕЛЫ МЕНЮ</span><b id="stat-categories">—</b><small>Категории блюд</small><i>◫</i></article></div>
+          <div class="overview-bottom"><div class="overview-note"><p class="admin-eyebrow">НЕ ЗАБУДЬТЕ</p><h3>Держите информацию свежей.</h3><p>Перед публикацией проверьте цены, доступность блюд, адрес и контакты. Изменения на сайте появляются сразу после сохранения.</p></div><div class="quick-actions"><p class="admin-eyebrow">БЫСТРЫЕ ДЕЙСТВИЯ</p><button data-action="add-dish">＋ Добавить блюдо <span>↗</span></button><button data-action="add-news">＋ Выпустить новость <span>↗</span></button><button data-go="settings">⚙ Настроить адрес и карту <span>↗</span></button></div></div>
+        </section>
+
+        <section class="admin-view" id="view-menu">
+          <div class="view-toolbar"><div><p class="admin-eyebrow">КАТАЛОГ РЕСТОРАНА</p><h2>Меню</h2><p class="view-description">Добавляйте новые блюда, редактируйте состав и управляйте наличием.</p></div><button class="admin-button admin-button-primary" data-action="add-dish">＋ Добавить блюдо</button></div>
+          <div class="table-tools"><input id="menu-search" type="search" placeholder="Найти блюдо..." /><span id="menu-result-count">0 позиций</span></div>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th>БЛЮДО</th><th>КАТЕГОРИЯ</th><th>ЦЕНА</th><th>СТАТУС</th><th></th></tr></thead><tbody id="menu-table-body"><tr><td colspan="5">Загрузка меню…</td></tr></tbody></table></div>
+        </section>
+
+        <section class="admin-view" id="view-news">
+          <div class="view-toolbar"><div><p class="admin-eyebrow">ЖИЗНЬ РЕСТОРАНА</p><h2>Новости</h2><p class="view-description">Публикуйте анонсы, сезонные предложения и новости команды.</p></div><button class="admin-button admin-button-primary" data-action="add-news">＋ Новая публикация</button></div>
+          <div class="news-admin-list" id="news-admin-list"><div class="empty-admin">Загрузка новостей…</div></div>
+        </section>
+
+        <section class="admin-view" id="view-settings">
+          <div class="view-toolbar"><div><p class="admin-eyebrow">КОНТАКТЫ И ИНТЕГРАЦИИ</p><h2>Настройки ресторана</h2><p class="view-description">Эта информация отображается в нижней части главной страницы.</p></div></div>
+          <form id="settings-form" class="settings-card">
+            <div class="settings-section-heading"><span>01</span><div><b>Основная информация</b><small>Адрес, телефон и расписание</small></div></div>
+            <div class="settings-grid"><label class="field-wide">Короткое описание<input name="tagline" maxlength="160" /></label><label class="field-wide">Адрес ресторана<input name="address" maxlength="200" placeholder="Город, улица, дом" /></label><label>Телефон<input name="phone" maxlength="80" placeholder="+7 (000) 000-00-00" /></label><label>Часы работы<input name="hours" maxlength="100" placeholder="Ежедневно · 12:00–23:00" /></label></div>
+            <div class="settings-section-heading"><span>02</span><div><b>Яндекс Карты</b><small>Интерактивная карта с точкой ресторана</small></div></div>
+            <div class="settings-grid"><label>Широта<input name="mapLat" inputmode="decimal" placeholder="Например, 55.751244" /></label><label>Долгота<input name="mapLng" inputmode="decimal" placeholder="Например, 37.618423" /></label><label class="field-wide">Ссылка на карточку ресторана в Яндекс Картах<input name="yandexOrgUrl" type="url" placeholder="https://yandex.ru/maps/org/..." /></label></div>
+            <div class="integration-note"><b>API-ключ карты</b><span>Ключ задаётся в `.env` через `YANDEX_MAPS_API_KEY`. Ограничьте его по HTTP Referer в кабинете разработчика Яндекса, затем перезапустите сервер.</span><a href="https://developer.tech.yandex.ru/" target="_blank" rel="noopener">Кабинет разработчика ↗</a></div>
+            <div class="settings-section-heading"><span>03</span><div><b>Отзывы Яндекса</b><small>Вставьте URL виджета, который сгенерирован в Яндекс Картах</small></div></div>
+            <div class="settings-grid"><label class="field-wide">Ссылка src виджета отзывов<input name="reviewsWidgetUrl" type="url" placeholder="https://yandex.ru/maps-reviews-widget/..." /></label></div>
+            <div class="integration-note"><b>Как получить виджет отзывов?</b><span>Откройте карточку ресторана в Яндекс Картах → «Поделиться» → «Виджет с отзывами». Скопируйте URL из атрибута `src` сгенерированного iframe и вставьте выше.</span><a href="https://yandex.ru/support/maps/ru/concept/get-map-reference" target="_blank" rel="noopener">Инструкция Яндекса ↗</a></div>
+            <div class="settings-actions"><span id="settings-status"></span><button class="admin-button admin-button-primary" type="submit">Сохранить настройки <span>↗</span></button></div>
+          </form>
+        </section>
+      </div>
+      <footer class="admin-footer"><span>ГОРШОЧЕК · ПАНЕЛЬ УПРАВЛЕНИЯ</span><a href="/" target="_blank" rel="noopener">Перейти на сайт ↗</a></footer>
+    </main>
+  </section>
+
+  <dialog id="editor-dialog" class="editor-dialog"><form id="editor-form" method="dialog"><div class="dialog-head"><div><p class="admin-eyebrow" id="dialog-eyebrow">РЕДАКТОР</p><h2 id="dialog-title">Новая позиция</h2></div><button type="button" class="dialog-close" id="dialog-close" aria-label="Закрыть">×</button></div><div class="dialog-body" id="dialog-body"></div><div class="dialog-actions"><button type="button" class="admin-button admin-button-ghost" id="dialog-cancel">Отмена</button><button type="submit" class="admin-button admin-button-primary" id="dialog-save">Сохранить <span>↗</span></button></div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
