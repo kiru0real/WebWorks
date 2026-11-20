@@ -9,12 +9,15 @@
 ![HTML](https://img.shields.io/badge/HTML5-markup-orange)
 ![CSS](https://img.shields.io/badge/CSS3-styling-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-interactive-yellow)
-![Node.js](https://img.shields.io/badge/Node.js-22%2B-green)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111827)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-22.12%2B-green)
 ![Express](https://img.shields.io/badge/Express-backend-lightgrey)
 ![SQLite](https://img.shields.io/badge/SQLite-database-blue)
 
-**7 проектов. 7 направлений. 7 разных визуальных стилей.**  
-**7 projects. 7 industries. 7 distinct visual styles.**
+**8 проектов. 8 направлений. 8 разных визуальных стилей.**  
+**8 projects. 8 fields. 8 distinct visual styles.**
 
 </div>
 
@@ -24,15 +27,15 @@
 
 **Русский**
 
-**Web Works** — коллекция из семи веб-проектов для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан, слот-игра, SaaS-концепт бизнес-аналитики и сайт ресторана русской кухни с серверной частью.
+**Web Works** — коллекция из восьми веб-проектов для разных сфер: стоматология, автосервис, премиальный автомобильный шоурум, суши-ресторан, слот-игра, SaaS-концепт бизнес-аналитики, сайт ресторана русской кухни и самостоятельная CRM-система.
 
-У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, слот-игра с балансом и историей вращений, премиальный тёмный **PULSE** — концепт платформы бизнес-аналитики с интерактивным дашбордом и анимациями — и **ГОРШОЧЕК**, современный сайт ресторана русской кухни с меню на SQLite и полноценной админ-панелью.
+У каждого проекта собственная визуальная система и набор функций. В репозитории есть светлый минималистичный сайт клиники, брутальный сайт автосервиса, премиальный тёмный шоурум **VELOCITY**, интерактивный каталог суши с корзиной и демо-админкой, слот-игра с балансом и историей вращений, премиальный тёмный **PULSE** — концепт платформы бизнес-аналитики с интерактивным дашбордом и анимациями, **ГОРШОЧЕК** — сайт ресторана русской кухни с backend и SQLite — и **NexoraCRM**, самостоятельная full-stack CRM-платформа для клиентов, сделок, задач, аналитики и командной работы.
 
 **English**
 
-**Web Works** is a collection of seven web projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, a slot game, a business intelligence SaaS concept, and a Russian cuisine restaurant website with a backend.
+**Web Works** is a collection of eight web projects for different industries: a dental clinic, an auto service, a premium automotive showroom, a sushi restaurant, a slot game, a business intelligence SaaS concept, a Russian cuisine restaurant website, and an independent CRM platform.
 
-Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, a slot game with balance and spin history, **PULSE**, a premium dark business intelligence SaaS concept with an interactive dashboard and motion effects, and **ГОРШОЧЕК**, a modern Russian cuisine restaurant website with a SQLite-backed menu and a full admin panel.
+Each project has its own visual style and feature set. The repository includes a light minimalist clinic website, a bold auto service website, the premium dark **VELOCITY** showroom, an interactive sushi menu with a cart and demo admin panel, a slot game with balance and spin history, **PULSE**, a premium dark business intelligence SaaS concept with an interactive dashboard and motion effects, **ГОРШОЧЕК**, a Russian cuisine restaurant website with a SQLite-backed menu and admin panel, and **NexoraCRM**, an independent full-stack CRM platform for contacts, deals, tasks, analytics, and team management.
 
 ---
 
@@ -47,9 +50,9 @@ Each project has its own visual style and feature set. The repository includes a
 | ![Casino Slots preview](screenshots/slots-preview.png) | ![Velocity preview](screenshots/velocity-preview.png) | ![PULSE preview](screenshots/pulse-preview.png) |
 
 
-| 🍛 Gorshochek |
-|---|
-| ![Gorshochek preview](screenshots/gorshochek-preview.png) |
+| 🍛 Gorshochek | ✦ NexoraCRM |
+|---|---|
+| ![Gorshochek preview](screenshots/gorshochek-preview.png) | ![NexoraCRM preview](screenshots/nexoracrm-preview.png) |
 
 ---
 
@@ -203,24 +206,53 @@ Each project has its own visual style and feature set. The repository includes a
 
 ---
 
+### ✦ 8. NexoraCRM — CRM-система • Customer Relationship Management
+
+**NexoraCRM** — самостоятельная full-stack CRM-платформа, не привязанная к конкретной отрасли. Она объединяет работу с клиентами, сделками, задачами, календарём, отчётами и сотрудниками в одном рабочем пространстве.
+
+*NexoraCRM is an independent, industry-agnostic full-stack CRM platform. It brings contacts, deals, tasks, calendar, reporting, and team management together in one workspace.*
+
+| 🇷🇺 Русский | 🇬🇧 English |
+|---|---|
+| 📊 Dashboard с KPI, выручкой, конверсией и активностью команды | 📊 Dashboard with KPIs, revenue, conversion, and team activity |
+| 👥 Клиентская база с поиском, тегами и табличным/карточным режимами | 👥 Contact database with search, tags, and table/card views |
+| 🧩 Kanban-воронка продаж с шестью этапами и drag-and-drop | 🧩 Six-stage sales pipeline with Kanban drag-and-drop |
+| ✅ Задачи с приоритетами, сроками и привязкой к контактам | ✅ Tasks with priorities, due dates, and linked contacts |
+| 🗓️ Календарь задач и ближайших событий | 🗓️ Calendar for tasks and upcoming events |
+| 📈 Отчёты по выручке, этапам воронки и источникам клиентов | 📈 Reports for revenue, pipeline stages, and lead sources |
+| 🧑‍💼 Команда с ролями администратора, руководителя и менеджера | 🧑‍💼 Team roles for admins, managers, and sales users |
+| 🔐 Авторизация, хеширование паролей и серверная проверка прав | 🔐 Authentication, password hashing, and server-side access control |
+| 💾 SQLite через WebAssembly с сохранением данных на диск | 💾 WebAssembly-powered SQLite with persistent local storage |
+| 📱 Адаптивный интерфейс на React и TypeScript | 📱 Responsive React and TypeScript interface |
+
+> **Важно • Important:** NexoraCRM — портфолио-версия для локального запуска и демонстрации CRM-процессов. В ней пока нет интеграций с почтой, телефонией, платёжными сервисами и внешними календарями. Для крупной многопользовательской production-системы рекомендуется PostgreSQL, резервное копирование, мониторинг и дополнительные процедуры защиты.
+>
+> NexoraCRM is a portfolio version for local use and CRM workflow demonstrations. Email, telephony, payment, and external calendar integrations are not included yet. A larger multi-user production deployment should use PostgreSQL, backups, monitoring, and additional security controls.
+
+**Папка проекта • Project folder:** [`nexoracrm/`](nexoracrm/) · [README проекта](nexoracrm/README.md)
+
+---
+
 ## 🛠️ Технологии • Tech Stack
 
 | Технология • Technology | Использование • Purpose |
 |---|---|
 | **HTML5 / CSS3 / JavaScript (ES6+)** | Структура, адаптивный дизайн, анимации и интерактивность • Structure, responsive styling, motion, and interactivity |
-| **Node.js 22+** | Серверная среда для ГОРШОЧКА • Server runtime for GORSHOCHEK |
-| **Express** | HTTP-сервер и REST API • HTTP server and REST API |
-| **SQLite + `better-sqlite3`** | Хранение меню, новостей, настроек и сессий • Storage for menu, news, settings, and sessions |
-| **`express-session` + `bcryptjs`** | Сессии администратора и хеширование паролей • Admin sessions and password hashing |
-| **Helmet + `express-rate-limit`** | Заголовки безопасности и ограничение частоты входа • Security headers and login rate limiting |
-| **`dotenv`** | Конфигурация сервера через `.env` • Server configuration through `.env` |
+| **React 19 + TypeScript** | Компонентный интерфейс и типизация NexoraCRM • Component UI and type safety for NexoraCRM |
+| **Vite 8** | Dev-сервер и production-сборка NexoraCRM • Development server and production build for NexoraCRM |
+| **Node.js 22.12+** | Серверная среда для ГОРШОЧКА и NexoraCRM • Server runtime for GORSHOCHEK and NexoraCRM |
+| **Express 5** | REST API и production HTTP-сервер для full-stack-проектов • REST API and production HTTP server for full-stack apps |
+| **SQLite (`better-sqlite3` / `sql.js`)** | `better-sqlite3` для ГОРШОЧКА; SQLite через WebAssembly (`sql.js`) для NexoraCRM • `better-sqlite3` for GORSHOCHEK; WebAssembly SQLite (`sql.js`) for NexoraCRM |
+| **`bcryptjs` + HttpOnly cookies** | Хеширование паролей и авторизованные сессии • Password hashing and authenticated sessions |
+| **Helmet** | Заголовки безопасности для Express • Express security headers |
+| **`dotenv`** | Конфигурация backend через `.env` • Backend configuration through `.env` |
 | **`localStorage`** | Локальное сохранение данных в проектах, где предусмотрено • Local persistence where implemented |
-| **Font Awesome / Google Fonts** | Иконки и веб-шрифты в проектах, где подключены • Icons and web fonts where included |
+| **Lucide React / Font Awesome / Google Fonts** | Иконки и веб-шрифты в проектах, где подключены • Icons and web fonts where included |
 | **Yandex Maps API 2.1** | Интерактивные карты и виджет отзывов там, где настроены • Interactive maps and reviews widget where configured |
 
-Большинство проектов — статические сайты на HTML, CSS и JavaScript: их можно открыть напрямую или через Live Server. **ГОРШОЧЕК** — отдельное full-stack приложение: для него нужны Node.js, установка npm-зависимостей и запуск Express-сервера.
+Шесть проектов — статические сайты на HTML, CSS и JavaScript: их можно открыть напрямую или через Live Server. **ГОРШОЧЕК** и **NexoraCRM** — отдельные full-stack-приложения: им нужны Node.js, установка npm-зависимостей и запуск backend-сервера. NexoraCRM дополнительно использует Vite для frontend в режиме разработки.
 
-Most projects are static HTML, CSS, and JavaScript websites and can be opened directly or through Live Server. **ГОРШОЧЕК** is a separate full-stack application that requires Node.js, npm dependencies, and an Express server.
+Six projects are static HTML, CSS, and JavaScript websites and can be opened directly or through Live Server. **ГОРШОЧЕК** and **NexoraCRM** are separate full-stack applications that require Node.js, npm dependencies, and a backend server. NexoraCRM also uses Vite to serve its frontend during development.
 
 ---
 
@@ -232,7 +264,9 @@ Most projects are static HTML, CSS, and JavaScript websites and can be opened di
 2. Для `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/` и `pulse/` открой `index.html` в современном браузере или используй **Live Server**.
 3. **ГОРШОЧЕК** запускается отдельно через Node.js: перейди в `gorshochek/`, установи зависимости командой `npm install`, создай `.env` на основе `.env.example` и выполни `npm run dev`.
 4. После запуска ГОРШОЧКА открой `http://localhost:3000`; админ-панель находится по адресу `http://localhost:3000/admin`.
-5. Внешние карты, виджеты и веб-шрифты могут требовать подключения к интернету и собственных ключей/настроек.
+5. **NexoraCRM** также запускается отдельно: перейди в `nexoracrm/`, создай `.env` из `.env.example`, выполни `npm install` и `npm run dev`.
+6. Открой NexoraCRM по адресу `http://localhost:5173`; Express API работает на `http://localhost:3001`.
+7. Внешние карты, виджеты и веб-шрифты могут требовать подключения к интернету и собственных ключей/настроек.
 
 ### 🇬🇧 English
 
@@ -240,7 +274,9 @@ Most projects are static HTML, CSS, and JavaScript websites and can be opened di
 2. For `dental/`, `auto/`, `velocity/`, `sushiwok/`, `slots/`, and `pulse/`, open `index.html` in a modern browser or use **Live Server**.
 3. **ГОРШОЧЕК** runs separately with Node.js: enter `gorshochek/`, install dependencies with `npm install`, create `.env` from `.env.example`, and run `npm run dev`.
 4. Once GORSHOCHEK is running, open `http://localhost:3000`; the admin panel is at `http://localhost:3000/admin`.
-5. External maps, widgets, and web fonts may require an internet connection and your own keys/settings.
+5. **NexoraCRM** also runs separately: enter `nexoracrm/`, create `.env` from `.env.example`, run `npm install`, and start it with `npm run dev`.
+6. Open NexoraCRM at `http://localhost:5173`; its Express API runs at `http://localhost:3001`.
+7. External maps, widgets, and web fonts may require an internet connection and your own keys/settings.
 
 ---
 
@@ -288,6 +324,41 @@ npm run dev
 При первом запуске создаются база `data/gorshochek.sqlite`, стартовые блюда и новости. Если `ADMIN_PASSWORD` не задан или оставлен placeholder, сгенерированный пароль администратора выводится в консоль. Сохрани его. Настройки логина и пароля из `.env` применяются только при первом создании администратора.
 
 On first launch, the app creates `data/gorshochek.sqlite`, sample dishes, and news. If `ADMIN_PASSWORD` is missing or left as the placeholder, a generated admin password is printed in the console. Save it. Admin credentials from `.env` are used only when the admin account is first created.
+
+#### NexoraCRM (React + Express)
+
+Требуется **Node.js 22.12 или новее**. Команды выполняются из корня репозитория:
+
+Node.js **22.12 or newer** is required. Run these commands from the repository root:
+
+```powershell
+cd nexoracrm
+Copy-Item .env.example .env
+npm install
+npm run dev
+```
+
+- Интерфейс • Frontend: `http://localhost:5173`
+- API • Backend: `http://localhost:3001`
+
+В режиме разработки Vite запускает интерфейс, а Express обслуживает API. Запросы `/api` проксируются на backend. При первом запуске создаются администратор и демонстрационные клиенты, сделки и задачи. Данные сохраняются в `nexoracrm/data/nexora.sqlite`.
+
+In development, Vite serves the UI while Express handles the API. `/api` requests are proxied to the backend. The first launch creates an administrator and sample contacts, deals, and tasks. Data is stored in `nexoracrm/data/nexora.sqlite`.
+
+**Демо-вход • Demo login:** `admin@nexora.local` / `Nexora2026!`. Задай собственные `ADMIN_NAME`, `ADMIN_EMAIL` и `ADMIN_PASSWORD` в `.env` до первого запуска. Не используй демонстрационный пароль на публичном сервере.
+
+For the first launch, the default demo login is `admin@nexora.local` / `Nexora2026!`. Set your own `ADMIN_NAME`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD` in `.env` before first start. Do not use the demo password on a public server.
+
+**Production-сборка • Production build:**
+
+```powershell
+npm run build
+npm start
+```
+
+После сборки Express обслуживает и API, и frontend по адресу `http://localhost:3001`. Порт и путь к SQLite можно изменить через `PORT` и `DB_FILE` в `.env`.
+
+After the build, Express serves both the API and frontend at `http://localhost:3001`. Change the port and SQLite path through `PORT` and `DB_FILE` in `.env`.
 
 ---
 
@@ -371,13 +442,31 @@ web-works/
 │   │       ├── app.js
 │   │       └── admin.js
 │   └── data/                   # создаётся автоматически, SQLite
+├── nexoracrm/                  # NexoraCRM — independent CRM platform
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.ts
+│   ├── tsconfig.json
+│   ├── .env.example
+│   ├── README.md
+│   ├── server/
+│   │   └── server.cjs          # Express API, sql.js, auth, seed data
+│   ├── src/
+│   │   ├── main.tsx
+│   │   ├── App.tsx
+│   │   ├── styles.css
+│   │   ├── types.ts
+│   │   └── lib/api.ts
+│   └── data/                   # создаётся автоматически, SQLite через sql.js
 └── screenshots/
     ├── dental-preview.png
     ├── auto-preview.png
     ├── velocity-preview.png
     ├── sushi-preview.png
     ├── slots-preview.png
-    └── pulse-preview.png
+    ├── pulse-preview.png
+    ├── gorshochek-preview.png
+    └── nexoracrm-preview.png
 ```
 
 ## 🎮 Casino Slots — Управление • Controls
@@ -412,19 +501,23 @@ If the current project version uses demo login credentials, the local demo acces
 
 - Проекты предназначены для портфолио и демонстрации frontend- и full-stack-навыков.
 - Данные каталога и цены VELOCITY могут быть демонстрационными и не представляют актуальное предложение автосалона.
-- Демо-админка SushiWok и данные в `localStorage` работают на стороне браузера и не заменяют защищённый backend. Админ-панель ГОРШОЧКА использует серверную авторизацию и SQLite.
+- Демо-админка SushiWok и данные в `localStorage` работают на стороне браузера и не заменяют защищённый backend. Админ-панель ГОРШОЧКА и NexoraCRM используют серверную авторизацию и базы SQLite.
 - ГОРШОЧЕК пока не принимает онлайн-заказы, оплату и бронирования столиков; фотографии блюд и новостей задаются URL-адресами.
+- NexoraCRM — локальная портфолио-версия CRM. В ней пока нет интеграций с почтой, телефонией, платёжными сервисами и внешними календарями; UI для смены собственного пароля и управления профилем также не входит в текущую версию.
+- Для крупной многопользовательской production-системы NexoraCRM рекомендуется перейти с SQLite на PostgreSQL и добавить миграции, резервное копирование и мониторинг.
 - Для реальной отправки заявок в проектах без backend требуется серверная часть или интеграция с сервисом форм.
 - Внешние API, карты и веб-шрифты в проектах, где они используются, могут требовать подключения к сети и действительных ключей. PULSE работает без внешних изображений, веб-шрифтов и сторонних JS/CSS-библиотек.
-- Для production-развёртывания ГОРШОЧКА настрой HTTPS, сильный `SESSION_SECRET`, ограничение ключа Яндекс Карт по домену и резервное копирование SQLite. Также проверь серверную валидацию и обработку пользовательского ввода.
+- Для production-развёртывания ГОРШОЧКА настрой HTTPS, сильный `SESSION_SECRET`, ограничение ключа Яндекс Карт по домену и резервное копирование SQLite. Для NexoraCRM используй HTTPS, собственные секреты и пароль администратора, регулярные резервные копии базы и дополнительные меры против перебора паролей.
 
 - These projects are intended to showcase frontend and full-stack skills.
 - VELOCITY inventory and prices may be demo data and do not represent a live dealership offer.
-- SushiWok's demo admin panel and `localStorage` data run in the browser and are not a secure backend. GORSHOCHEK's admin panel uses server-side authentication and SQLite.
+- SushiWok's demo admin panel and `localStorage` data run in the browser and are not a secure backend. GORSHOCHEK and NexoraCRM use server-side authentication and SQLite databases.
 - GORSHOCHEK does not currently process online orders, payments, or table reservations; dish and news images are provided as URLs.
+- NexoraCRM is a local portfolio CRM version. Email, telephony, payment, and external calendar integrations are not included; the current version also has no UI for changing your own password or managing your profile.
+- For a larger multi-user production deployment, NexoraCRM should migrate from SQLite to PostgreSQL and add migrations, backups, and monitoring.
 - Projects without a backend need a server component or form-service integration to submit real inquiries.
 - External APIs, maps, and web fonts may require an internet connection and valid keys in projects that use them. PULSE works without external images, web fonts, or third-party JS/CSS libraries.
-- Before deploying GORSHOCHEK to production, configure HTTPS, a strong `SESSION_SECRET`, domain restrictions for the Yandex Maps key, and SQLite backups. Review server-side validation and user-input handling as well.
+- Before deploying GORSHOCHEK to production, configure HTTPS, a strong `SESSION_SECRET`, domain restrictions for the Yandex Maps key, and SQLite backups. For NexoraCRM, use HTTPS, custom secrets and an administrator password, regular database backups, and additional brute-force protection.
 
 ---
 
