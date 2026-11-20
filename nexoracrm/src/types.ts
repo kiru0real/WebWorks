@@ -1,0 +1,8 @@
+export type Role = 'admin' | 'manager' | 'sales';
+export interface User { id:number; name:string; email:string; role:Role; is_active:number; created_at:string; }
+export interface Contact { id:number; name:string; company:string; email:string; phone:string; source:string; status:'lead'|'active'|'customer'; value:number; last_contact:string|null; tags:string[]; created_at:string; deals_count?:number; }
+export interface Deal { id:number; title:string; company:string; contact_id:number|null; contact_name?:string; value:number; stage:'lead'|'qualified'|'proposal'|'negotiation'|'won'|'lost'; probability:number; close_date:string|null; won_at:string|null; owner_id:number|null; owner_name?:string; created_at:string; }
+export interface Task { id:number; title:string; description:string; due_date:string; priority:'low'|'medium'|'high'; status:'todo'|'in_progress'|'done'; assigned_to:number|null; assignee_name?:string; related_contact_id:number|null; contact_name?:string; created_at:string; }
+export interface Activity { id:number; type:string; title:string; description:string; user_name?:string; contact_name?:string; created_at:string; }
+export interface DashboardData { metrics:{totalContacts:number;newContacts:number;openPipeline:number;wonRevenue:number;winRate:number;tasksToday:number}; stages:{stage:string;count:number;value:number}[]; revenue:{month:string;value:number}[]; recentActivities:Activity[]; upcomingTasks:Task[]; recentDeals:Deal[]; }
+export interface ReportsData { monthly:{month:string;deals:number;revenue:number;won:number}[]; byStage:{stage:string;count:number;value:number}[]; sources:{source:string;count:number}[]; topContacts:{id:number;name:string;company:string;value:number;deals:number}[]; }
